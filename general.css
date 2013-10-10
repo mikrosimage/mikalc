@@ -1,0 +1,36 @@
+.tableColumnTitle  { font-weight: bold; font-size: 9pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.defaultPath     { color: white; font-weight: bold; font-size: 10pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.interval { font-size: 2pt }
+.mainTitle { font-weight: bold; font-size: 30pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-align: center; padding: 10pt}
+.menuBar     { font-weight: bold; font-size: 10pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; margin-top: 5pt; margin-bottom: 5pt; color: navy }
+.ns4MenuBar { font-weight: bold; font-size: 10pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; color: navy }
+.menuBarCurrentLocation { font-size: 22pt; color: navy}
+.plain  { font-size: 9pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.productionMessage {color: gray; font-size: 10pt; text-align: justify; padding: 10pt; font-family: Courier, Helvetica, Geneva, Swiss, SunSans-Regular; font-weight: bold }
+.bold { font-weight: bold }
+.rightLink      { color: #b8860b; font-weight: bold; font-size: 9pt; font-family: "Courier New", Courier, Monaco; text-decoration: none; text-align: right }
+.addedPath  { color: maroon; font-size: 10pt }
+.tableSimpleData     { font-size: 9pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; vertical-align: middle }
+.layerNumber    { color: white; font-weight: bold; font-size: 16pt; font-family: Arial, Helvetica, sans-serif }
+.smallLayerNumber    { color: white; font-weight: bold; font-size: 16pt; font-family: Arial, Helvetica, sans-serif }
+a:hover   { color: #b8860b; text-decoration: underline }
+.center { text-align: center }
+.leftMenu { color: white; font-size: 11pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.leftMenuItem { font-weight: bold; font-size: 10pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.tab { color: white; font-weight: bold; font-size: 8pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.plainTextParagraph { font-size: 9pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; padding: 5pt }
+.betweenParts {font-size: 1pt;}
+.subPart    { text-decoration: none; color: white; font-weight: bold; font-size: 11pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular}
+.projectNumber	{ color: white; font-weight: bold; font-size: 18pt; font-family: Arial, Helvetica, sans-serif }
+.informationNote	{font-size: 10pt; font-family: Arial, Helvetica, sans-serif; font-style: italic}
+.devNote	{font-family: courier; font-size: 10pt; font-weight: bold}
+.mainMenuBar2	{color: white; font-weight: bold; font-size: 8pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular}
+.mainEditingMenu {color: maroon; font-weight: bold; font-family: Courier; font-size: 10pt}
+.fxSubPart    { color: white; font-weight: bold; font-size: 11pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular}
+.cautionMessage { color: red; font-weight: bold; padding: 5pts}}
+.adminExplanation { color: orange; font-size: 12pt; font-family: Arial, Helvetica, Geneva }
+.compulsoryField {font-weight: bold; font-size: 14pt; }
+.editionBar {color: maroon; text-decoration: none}
+.footNote {color: #999999; font-family: Times; font-size: 9pt}
+.vfxDeptEditingFilterBarOn {color: black; font-size: 12pt; font-weight: bold}
+.confirmButton { BORDER-TOP: 1px solid #000000; BORDER-BOTTOM: 1px solid #000000; BORDER-LEFT: 1px solid #000000; BORDER-RIGHT: 1px solid #000000 ; font: 8pt Verdana, Arial, Helvetica, sans-serif; font-weight:regular; background-color: #ffffff }

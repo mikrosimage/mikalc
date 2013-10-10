@@ -1,0 +1,155 @@
+{
+    attributes = (
+        {
+            columnName = id; 
+            externalType = int; 
+            name = id; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = in_static_time; 
+            externalType = int; 
+            name = inStaticTime; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = in_time_by_frame; 
+            externalType = int; 
+            name = inTimeByFrame; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = machine_name; 
+            externalType = varchar; 
+            name = machineName; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSString; 
+            width = 255; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = out_frames_to_add; 
+            externalType = int; 
+            name = outFramesToAdd; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = out_frames_to_add_by_frame; 
+            externalType = double; 
+            name = outFramesToAddByFrame; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = out_static_time; 
+            externalType = int; 
+            name = outStaticTime; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = out_time_by_frame; 
+            externalType = double; 
+            name = outTimeByFrame; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = process_frames_to_add; 
+            externalType = int; 
+            name = processFramesToAdd; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = process_frames_to_add_by_frame; 
+            externalType = double; 
+            name = processFramesToAddByFrame; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = process_static_time; 
+            externalType = int; 
+            name = processStaticTime; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = process_time_by_frame; 
+            externalType = double; 
+            name = processTimeByFrame; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSNumber; 
+            valueType = d; 
+        }, 
+        {
+            columnName = type; 
+            externalType = varchar; 
+            name = type; 
+            serverTimeZone = Europe/Paris; 
+            valueClassName = NSString; 
+            width = 255; 
+        }
+    ); 
+    attributesUsedForLocking = (
+        id, 
+        inStaticTime, 
+        inTimeByFrame, 
+        processFramesToAdd, 
+        processFramesToAddByFrame, 
+        processStaticTime, 
+        processTimeByFrame, 
+        outFramesToAdd, 
+        outFramesToAddByFrame, 
+        outStaticTime, 
+        outTimeByFrame, 
+        machineName, 
+        type
+    ); 
+    className = Shooter; 
+    classProperties = (
+        inStaticTime, 
+        inTimeByFrame, 
+        processFramesToAdd, 
+        processFramesToAddByFrame, 
+        processStaticTime, 
+        processTimeByFrame, 
+        outFramesToAdd, 
+        outFramesToAddByFrame, 
+        outStaticTime, 
+        outTimeByFrame, 
+        machineName, 
+        type
+    ); 
+    externalName = image_sequence_treatment_machine; 
+    fetchSpecificationDictionary = {}; 
+    name = Shooter; 
+    parent = ImageSequenceTreatmentMachine; 
+    primaryKeyAttributes = (id); 
+    restrictingQualifier = "(type = 'shooter')"; 
+}

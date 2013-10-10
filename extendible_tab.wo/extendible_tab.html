@@ -1,0 +1,56 @@
+<WEBOBJECT NAME=Conditional_isStart>
+<script language="javascript">
+<!--
+// images necessary to perform the tab visibility switch
+var extendibleTabArrowDown 			= new Image();
+var extendibleTabArrowRight 			= new Image();
+var extendibleTabArrowDownOver 		= new Image();
+var extendibleTabArrowRightOver 		= new Image();
+
+extendibleTabArrowDown.src 			= "<WEBOBJECT NAME=WOResourceURL_arrowDownSrc></WEBOBJECT>";
+extendibleTabArrowRight.src 		= "<WEBOBJECT NAME=WOResourceURL_arrowRightSrc></WEBOBJECT>";
+extendibleTabArrowDownOver.src 		= "<WEBOBJECT NAME=WOResourceURL_arrowDownOverSrc></WEBOBJECT>";
+extendibleTabArrowRightOver.src	 	= "<WEBOBJECT NAME=WOResourceURL_arrowRightOverSrc></WEBOBJECT>";
+
+-->
+</script>
+
+	<table width="100%" border="0" cellpadding="0" cellspacing="2">
+</WEBOBJECT>
+<tr>
+	<td rowspan='2' valign='top' bgcolor="#e6e6e6" width='20' onclick="changeDivVisibility('<WEBOBJECT NAME=String_divIdJavascript></WEBOBJECT>', '<WEBOBJECT NAME=WOString_arrowRandomId></WEBOBJECT>');"><img id="<WEBOBJECT NAME=WOString_arrowRandomId></WEBOBJECT>" src="<WEBOBJECT NAME=WOResourceURL_tabArrowSrc></WEBOBJECT>" onmouseover="rollArrowOver('<WEBOBJECT NAME=String_divId></WEBOBJECT>', '<WEBOBJECT NAME=WOString_arrowRandomId></WEBOBJECT>');" onmouseout="rollArrowOut('<WEBOBJECT NAME=String_divId></WEBOBJECT>', '<WEBOBJECT NAME=WOString_arrowRandomId></WEBOBJECT>');" border="0"></td>
+	<td>
+		<table bgcolor='maroon' width='100%' cellspacing='0' cellpadding='0' border='0'>
+			<tbody>
+				<tr>
+					<td bgcolor='<WEBOBJECT NAME=WOString_headColor></WEBOBJECT>' align='left' width='33%'>&nbsp;</td>
+					<td bgcolor='<WEBOBJECT NAME=WOString_headColor></WEBOBJECT>' align='center' width='33%'>
+						<p class='fxSubPart'><WEBOBJECT NAME=extensibleTabLabel></WEBOBJECT></p>
+					</td>
+					<td bgcolor='<WEBOBJECT NAME=WOString_headColor></WEBOBJECT>' align='right' width='33%'><span class='defaultPath'>&nbsp;</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div id='<WEBOBJECT NAME=String_divId></WEBOBJECT>'>
+			<table width="100%" class="plain">
+				<tbody>
+					<tr>
+						<td>
+							<WEBOBJECT NAME=Content></WEBOBJECT>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</td>
+</tr>
+<WEBOBJECT NAME=Conditional_isEnd>
+<tr bgcolor="#e6e6e6">
+	<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+</WEBOBJECT>

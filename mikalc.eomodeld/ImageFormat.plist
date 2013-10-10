@@ -1,0 +1,75 @@
+{
+    attributes = (
+        {
+            columnName = family; 
+            externalType = varchar; 
+            name = family; 
+            valueClassName = NSString; 
+            width = 255; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = are_pixels_square; 
+            externalType = int; 
+            name = arePixelsSquare; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = height; 
+            externalType = int; 
+            name = height; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = id; 
+            externalType = int; 
+            name = id; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = id_medium; 
+            externalType = int; 
+            name = idMedium; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = image_format_name; 
+            externalType = varchar; 
+            name = imageFormatName; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 255; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = width; 
+            externalType = int; 
+            name = width; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (id, imageFormatName, width, height, arePixelsSquare, idMedium, family); 
+    className = ImageFormat; 
+    classProperties = (imageFormatName, width, height, arePixelsSquare, medium, family); 
+    externalName = image_format; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {_clientClassPropertyNames = (Attribute); }; 
+    name = ImageFormat; 
+    primaryKeyAttributes = (id, idMedium); 
+    relationships = (
+        {
+            destination = Medium; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = idMedium; }); 
+            name = medium; 
+        }
+    ); 
+}

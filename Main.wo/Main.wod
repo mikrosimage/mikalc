@@ -1,0 +1,551 @@
+Conditional1: WOConditional
+{
+	condition = displayFrameEdition;
+	negate = true;
+}
+
+Conditional10: WOConditional {
+	condition = displayTimeCodeEdition;
+}
+
+Conditional11: WOConditional {
+	condition = displayTimeCodeEdition;
+	negate = true;
+}
+
+Conditional12: WOConditional {
+	condition = displayTimeCodeEdition;
+}
+
+Conditional13: WOConditional {
+	condition = displayTimeCodeEdition;
+	negate = true;
+}
+
+Conditional14: WOConditional {
+	condition = displayTimeCodeEdition;
+}
+
+Conditional15: WOConditional {
+	condition = displayTimeCodeEdition;
+	negate = true;
+}
+
+Conditional16: WOConditional {
+	condition = displayKeyCodeEdition;
+}
+
+Conditional17: WOConditional {
+	condition = displayKeyCodeEdition;
+	negate = true;
+}
+
+Conditional18: WOConditional {
+	condition = displayKeyCodeEdition;
+}
+
+Conditional19: WOConditional {
+	condition = displayKeyCodeEdition;
+	negate = true;
+}
+
+Conditional2: WOConditional {
+	condition = isExpertMode;
+}
+
+Conditional20: WOConditional {
+	condition = displayKeyCodeEdition;
+}
+
+Conditional21: WOConditional {
+	condition = displayKeyCodeEdition;
+	negate = true;
+}
+
+Conditional22: WOConditional
+{
+	condition = isCustomFormat;
+	negate = true;
+}
+
+Conditional23: WOConditional
+{
+	condition = isCustomFormat;
+}
+
+Conditional24: WOConditional
+{
+	condition = displayFrameEdition;
+}
+
+Conditional25: WOConditional
+{
+	condition = displayTimeCodeEdition;
+	negate = true;
+}
+
+Conditional26: WOConditional
+{
+	condition = displayTimeCodeEdition;
+}
+
+Conditional27: WOConditional
+{
+	condition = displayKeyCodeEdition;
+	negate = true;
+}
+
+Conditional28: WOConditional
+{
+	condition = displayKeyCodeEdition;
+}
+
+Conditional3: WOConditional {
+	condition = isExpertMode;
+}
+
+Conditional4: WOConditional {
+	condition = displayFrameEdition;
+}
+
+Conditional5: WOConditional {
+	condition = displayFrameEdition;
+	negate = true;
+}
+
+Conditional6: WOConditional {
+	condition = displayFrameEdition;
+}
+
+Conditional7: WOConditional {
+	condition = displayFrameEdition;
+	negate = true;
+}
+
+Conditional8: WOConditional {
+	condition = displayFrameEdition;
+}
+
+Conditional9: WOConditional {
+	condition = displayFrameEdition;
+	negate = true;
+}
+
+Cp_KeyCode1: Cp_KeyCode
+{
+	formatter = keyCodeFormatter;
+	keyCode = converter.startKC;
+}
+
+Cp_KeyCode2: Cp_KeyCode
+{
+	formatter = keyCodeFormatter;
+	keyCode = converter.endKC;
+}
+
+Cp_KeyCode3: Cp_KeyCode
+{
+	formatter = keyCodeFormatter;
+	keyCode = converter.totalKC;
+}
+
+Cp_TimeCode: Cp_TimeCode
+{
+	formatter = timeCodeFormatter;
+	timeCode = converter.totalTC;
+}
+
+Cp_TimeCode2: Cp_TimeCode
+{
+	formatter = timeCodeFormatter;
+	timeCode = converter.endTC;
+}
+
+Cp_TimeCode3: Cp_TimeCode
+{
+	formatter = timeCodeFormatter;
+	timeCode = converter.startTC;
+}
+
+Form1: WOForm {
+	action = updatePopup;
+	multipleSubmit = true;
+}
+
+Hyperlink1: WOHyperlink {
+	action = editFrames;
+}
+
+Hyperlink2: WOHyperlink {
+	action = editTimeCode;
+}
+
+Hyperlink3: WOHyperlink {
+	action = editKeyCode;
+}
+
+JavaScript1: WOJavaScript
+{
+	hideInComment = true;
+	scriptFile = "extendible_tab.js";
+}
+
+JavaScript2: WOJavaScript
+{
+	hideInComment = true;
+	scriptFile = "Cp_TimeCode.js";
+}
+
+JavaScript3: WOJavaScript
+{
+    hideInComment = true;
+    scriptFile = "Cp_KeyCode.js";
+}
+
+PopUpButton1: WOPopUpButton {
+	displayString = mediumItem;
+	item = mediumItem;
+	list = media;
+	onchange = "submit();";
+	selection = selectedMedium;
+	disabled = isCustomFormat;
+}
+
+PopUpButton10: WOPopUpButton {
+	displayString = shooterItem.machineName;
+	item = shooterItem;
+	list = availableShooters;
+	selection = selectedShooter;
+	onchange = "submit();";
+}
+
+PopUpButton11: WOPopUpButton
+{
+	list = imageFormatFamilies;
+	disabled = isCustomFormat;
+	onchange = "submit();";
+	selection = selectedFamily;
+}
+
+PopUpButton12: WOPopUpButton
+{
+	displayString = projectionFpsDisplayString;
+	item = projectionFpsItem;
+	list = staticProjectionFps;
+	onchange = "submit();";
+	selection = selectedProjectionFps;
+}
+
+PopUpButton13: WOPopUpButton {
+	displayString = backuperItem.machineName;
+	item = backuperItem;
+	list = availableBackupers;
+	selection = selectedBackuper;
+	onchange = "submit();";
+}
+
+PopUpButton14: WOPopUpButton
+{
+	disabled = isCustomFormat;
+	list = familyImageFormats;
+	onchange = "submit();";
+	selection = selectedImageFormat;
+}
+
+PopUpButton3: WOPopUpButton
+{
+	displayString = bitDepthItem;
+	item = bitDepthItem;
+	list = bitDepths;
+	selection = converter.bitDepth;
+	onchange = "submit();";
+}
+
+PopUpButton4: WOPopUpButton
+{
+	displayString = zoomFactorDisplayString;
+	item = zoomFactorItem;
+	list = staticZoomFactors;
+	selection = selectedZoomFactor;
+	onchange = "submit();";
+}
+
+PopUpButton5: WOPopUpButton
+{
+	displayString = layerNumberItem;
+	item = layerNumberItem;
+	list = layerNumbers;
+	selection = converter.layerNb;
+	onchange = "submit();";
+	bgcolor = "white";
+}
+
+PopUpButton6: WOPopUpButton
+{
+	displayString = timeCodeFpsDisplayString;
+	item = timeCodeFpsItem;
+	list = staticTimeCodeFps;
+	selection = selectedTimeCodeFps;
+	onchange = "submit();";
+}
+
+PopUpButton7: WOPopUpButton
+{
+	displayString = keyCodeFramesByFootDisplayString;
+	item = keyCodeFramesByFootItem;
+	list = staticKeyCodeFramesByFoot;
+	selection = selectedKeyCodeFramesByFoot;
+	onchange = "submit();";
+}
+
+PopUpButton8: WOPopUpButton {
+	displayString = modeItem;
+	item = modeItem;
+	list = availableModes;
+	selection = mode;
+	onchange = "submit();";
+}
+
+PopUpButton9: WOPopUpButton {
+	displayString = scannerItem.machineName;
+	item = scannerItem;
+	list = availableScanners;
+	selection = selectedScanner;
+	onchange = "submit();";
+}
+
+RadioButton1: WORadioButton
+{
+	name = "isCustomFormat";
+	onclick = "submit();";
+	selection = isCustomFormat;
+	value = true;
+}
+
+RadioButton2: WORadioButton
+{
+	name = "isCustomFormat";
+	onclick = "submit();";
+	selection = isCustomFormat;
+	value = false;
+}
+
+String1: WOString
+{
+	value = selectedImageFormat.width;
+}
+
+String10: WOString {
+	value = converter.startFrame;
+}
+
+String11: WOString {
+	value = converter.endFrame;
+}
+
+String12: WOString {
+	value = converter.totalFrame;
+}
+
+String13: WOString {
+	value = converter.startTC;
+}
+
+String14: WOString {
+	value = converter.endTC;
+}
+
+String15: WOString {
+	value = converter.totalTC;
+}
+
+String16: WOString {
+	value = converter.startKC;
+}
+
+String17: WOString {
+	value = converter.endKC;
+}
+
+String18: WOString {
+	value = converter.totalKC;
+}
+
+String19: WOString
+{
+	value = converter.formattedProjectionTime;
+}
+
+String2: WOString
+{
+	value = selectedImageFormat.height;
+}
+
+String20: WOString {
+	value = converter.totalFrame;
+}
+
+String21: WOString {
+	value = backupFrames;
+}
+
+String3: WOString
+{
+	value = converter.formattedWeight;
+}
+
+String4: WOString {
+	value = scanTime;
+}
+
+String5: WOString {
+	value = shootTime;
+}
+
+String6: WOString {
+	value = backupTime;
+}
+
+String7: WOString {
+	value = scanFrames;
+}
+
+String8: WOString {
+	value = shootFrames;
+}
+
+SubmitButton1: WOSubmitButton
+{
+	action = updatePopup;
+	value = "calculer";
+	class = "confirmButton";
+	tabindex = 0;
+}
+
+SubmitButton2: WOSubmitButton
+{
+	action = clearConverter;
+	value = "init images";
+	class = "confirmButton";
+}
+
+SubmitButton3: WOSubmitButton
+{
+	action = initInput;
+	value = "init format";
+	class = "confirmButton";
+}
+
+SubmitButton4: WOSubmitButton
+{
+	action = updatePopup;
+	value = "calculer";
+	class = "confirmButton";
+	tabindex = 0;
+}
+
+TextField1: WOTextField
+{
+	value = converter.startFrame;
+	numberformat = "0";
+	size = "12";
+	style = "border-style:'groove'";
+}
+
+TextField2: WOTextField
+{
+	size = 6;
+	value = customFormat.width;
+}
+
+TextField4: WOTextField
+{
+	value = converter.endFrame;
+	numberformat = "0";
+	size = "12";
+	style = "border-style:'groove'";
+}
+
+TextField5: WOTextField
+{
+	size = 6;
+	value = customFormat.height;
+}
+
+TextField7: WOTextField
+{
+	value = converter.totalFrame;
+	numberformat = "0";
+	size = "12";
+	style = "border-style:'groove'";
+	color = "white";
+}
+
+TextField8: WOTextField
+{
+	value = converter.totalTC;
+	formatter = timeCodeFormatter;
+	size = "12";
+}
+
+UnnamedWebObject: Unknown
+{
+}
+
+WOConditional_isExpertMode: WOConditional
+{
+	condition = isExpertMode;
+}
+
+WOConditional_reductionFactor: WOConditional
+{
+	condition = isExpertMode;
+}
+
+WOResourceURL_styleSheetHref: WOResourceURL
+{
+	filename = "general.css";
+	framework = "app";
+}
+
+WOString_frameSpecification: WOString
+{
+	value = converter.frameSpecification;
+}
+
+extendible_tab: extendible_tab
+{
+	extendibleTabName = "Backup";
+	isEnd = true;
+	isStart = false;
+	headColor = application.tabHeadColor;
+}
+
+extendible_tab1: extendible_tab
+{
+	isEnd = false;
+	isStart = false;
+	extendibleTabName = "Scan";
+	headColor = application.tabHeadColor;
+}
+
+extendible_tab2: extendible_tab
+{
+	isEnd = false;
+	isStart = true;
+	extendibleTabName = "Entrée";
+	headColor = application.tabHeadColor;
+}
+
+extensible_tab_js: extendible_tab
+{
+	isEnd = false;
+	isStart = false;
+	extendibleTabName = "Shoot";
+	headColor = application.tabHeadColor;
+}
+
+poweredByWO: WOImage 
+{
+	filename = "poweredByWO.gif";
+}

@@ -1,0 +1,31 @@
+WOString_jsFramesByFootVarName: WOString
+{
+	value = jsFramesByFootVarName;
+}
+
+WOString_jsFramesByFootVarValue: WOString
+{
+	value = jsFramesByFootVarValue;
+}
+
+WOString_jsVarName: WOString
+{
+	value = jsVarName;
+}
+
+WOString_jsVarValue: WOString
+{
+	value = jsVarValue;
+}
+
+WOTextField_formattedKeyCode: WOTextField
+{
+	formatter = formatter;
+	value = keyCode;
+	class = decorationClass;
+	style = decorationStyle;
+	onblur = onBlurHandlerCall;
+	onkeypress = onKeyPressHandlerCall;
+	size = 12;
+	id = jsId;
+}

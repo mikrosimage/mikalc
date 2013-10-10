@@ -1,0 +1,76 @@
+Conditional_isEnd: WOConditional
+{
+	condition = isEnd;
+}
+
+Conditional_isStart: WOConditional
+{
+	condition = isStart;
+}
+
+Content: WOComponentContent
+{
+}
+
+
+String_divId: WOString
+{
+	value = divRandomId;
+}
+
+String_divIdJavascript: WOString
+{
+	value = divRandomId;
+}
+
+WOImage_TabArrow: WOImage
+{
+	filename = "arrow_down.jpg";
+	id = imageRandomId;
+}
+WOResourceURL_arrowDownOverSrc: WOResourceURL
+{
+	filename = "arrow_down_over.jpg";
+	framework = "app";
+}
+
+WOResourceURL_arrowDownSrc: WOResourceURL
+{
+	filename = "arrow_down.jpg";
+	framework = "app";
+}
+WOResourceURL_arrowRightOverSrc: WOResourceURL
+{
+	filename = "arrow_right_over.jpg";
+	framework = "app";
+}
+WOResourceURL_arrowRightSrc: WOResourceURL
+{
+	filename = "arrow_right.jpg";
+	framework = "app";
+}
+WOResourceURL_tabArrowSrc: WOResourceURL
+{
+	filename = "arrow_down.jpg";
+	framework = "app";
+}
+WOString_arrowRandomId: WOString
+{
+	value = imageRandomId;
+}
+
+WOString_headColor: WOString
+{
+	value = headColor;
+}
+
+extensibleTabLabel: WOString
+{
+	value = extendibleTabName;
+}
+
+test: WOResourceURL
+{
+	filename = "arrow_down.jpg";
+	framework = "app";
+}

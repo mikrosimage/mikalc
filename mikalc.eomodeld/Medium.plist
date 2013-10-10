@@ -1,0 +1,37 @@
+{
+    attributes = (
+        {
+            columnName = id; 
+            externalType = int; 
+            name = id; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = medium_name; 
+            externalType = varchar; 
+            name = mediumName; 
+            valueClassName = NSString; 
+            valueType = S; 
+            width = 255; 
+        }
+    ); 
+    attributesUsedForLocking = (id, mediumName); 
+    className = Medium; 
+    classProperties = (mediumName, imageFormats); 
+    externalName = medium; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {_clientClassPropertyNames = (Attribute); }; 
+    name = Medium; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = ImageFormat; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = idMedium; sourceAttribute = id; }); 
+            name = imageFormats; 
+        }
+    ); 
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="extendible_tab" wocomponentcontent="true">
+
+		<binding name="extendibleTabName"/>
+		<binding name="isEnd" defaults="Boolean"/>
+		<binding name="isStart" defaults="Boolean"/>
+		<binding name="headColor"/>
+	</wo>
+</wodefinitions>

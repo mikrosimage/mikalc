@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="Cp_KeyCode" wocomponentcontent="false">
+
+		<binding name="customClass"/>
+		<binding name="customStyle"/>
+		<binding name="decorationClass"/>
+		<binding name="decorationStyle"/>
+		<binding name="formatter"/>
+		<binding name="keyCode"/>
+
+		<validation message="&apos;formatter&apos; is a required binding">
+			<unbound name="formatter"/>
+		</validation>
+
+		<validation message="&apos;keyCode&apos; is a required binding">
+			<unbound name="keyCode"/>
+		</validation>
+	</wo>
+</wodefinitions>

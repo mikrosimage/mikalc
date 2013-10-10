@@ -1,0 +1,32 @@
+WOString_jsFpsVarName: WOString
+{
+	value = jsFpsVarName;
+}
+
+WOString_jsFpsVarValue: WOString
+{
+	value = jsFpsVarValue;
+}
+
+WOString_jsVarName: WOString
+{
+	value = jsVarName;
+}
+
+WOString_jsVarValue: WOString
+{
+	value = jsVarValue;
+}
+
+WOTextField_formattedTimeCode: WOTextField
+{
+	formatter = formatter;
+	value = timeCode;
+	class = decorationClass;
+	style = decorationStyle;
+	onblur = onBlurHandlerCall;
+	onkeypress = onKeyPressHandlerCall;
+	size = 12;
+	id = jsId;
+	color = "white";
+}

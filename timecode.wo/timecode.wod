@@ -1,0 +1,21 @@
+WOString_jsFpsVarName: WOString
+{
+}
+
+WOString_jsFpsVarValue: WOString
+{
+}
+
+WOString_jsVarName: WOString
+{
+}
+
+WOString_jsVarValue: WOString
+{
+}
+
+WOTextField_formattedTimeCode: WOTextField
+{
+	formatter = formatter;
+	value = timeCode;
+}
